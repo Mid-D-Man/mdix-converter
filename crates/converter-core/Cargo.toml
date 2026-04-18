@@ -1,0 +1,19 @@
+[package]
+name        = "converter-core"
+version     = "0.1.0"
+edition     = "2021"
+description = "Core conversion and induction pipeline — compiles to native and wasm32"
+license     = "MIT"
+repository  = "https://github.com/Mid-D-Man/mdix-converter"
+
+[lib]
+name       = "converter_core"
+crate-type = ["lib"]
+
+[dependencies]
+serde      = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml       = "0.8"
+
+[dev-dependencies]
+serde_json = "1.0"

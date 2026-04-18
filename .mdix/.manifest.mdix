@@ -1,0 +1,66 @@
+@CONFIG(
+  version    -> "1.0.0"
+  generated  -> "2026-04-18T12:44:26Z"
+  features   -> "data"
+  debug_mode -> "off"
+)
+
+@DATA(
+  template      = ".mdix/project_structure/project_structure.mdix"
+  template_hash = "e2c839b2f92b"
+  last_run      = "2026-04-18T12:44:26Z"
+  new_this_run  = 46
+  overridden    = 0
+  skipped       = 0
+  deleted       = 0
+  renamed       = 0
+  updated       = 0
+
+  created_files::
+    ".gitignore"
+    "Cargo.toml"
+    "README.md"
+    "crates/converter-core/Cargo.toml"
+    "crates/converter-core/src/emitter/formatter.rs"
+    "crates/converter-core/src/emitter/mod.rs"
+    "crates/converter-core/src/induction/enums.rs"
+    "crates/converter-core/src/induction/functions.rs"
+    "crates/converter-core/src/induction/math.rs"
+    "crates/converter-core/src/induction/mod.rs"
+    "crates/converter-core/src/ingestion/ir.rs"
+    "crates/converter-core/src/ingestion/json.rs"
+    "crates/converter-core/src/ingestion/mod.rs"
+    "crates/converter-core/src/ingestion/toml_input.rs"
+    "crates/converter-core/src/lib.rs"
+    "crates/converter-core/src/naming/heuristics.rs"
+    "crates/converter-core/src/naming/mod.rs"
+    "crates/converter-core/tests/.gitkeep"
+    "crates/converter-core/tests/fixtures/weapons_optimized.mdix"
+    "crates/converter-core/tests/fixtures/weapons_raw.json"
+    "crates/converter-core/tests/integration_test.rs"
+    "crates/converter-wasm/Cargo.toml"
+    "crates/converter-wasm/src/lib.rs"
+    "web/package.json"
+    "web/src/app.css"
+    "web/src/app.d.ts"
+    "web/src/app.html"
+    "web/src/lib/components/CodeEditor.svelte"
+    "web/src/lib/components/Footer.svelte"
+    "web/src/lib/components/FormatTabs.svelte"
+    "web/src/lib/components/HeroSection.svelte"
+    "web/src/lib/components/Nav.svelte"
+    "web/src/lib/components/OutputPanel.svelte"
+    "web/src/lib/components/Playground.svelte"
+    "web/src/lib/components/SamplePicker.svelte"
+    "web/src/lib/components/StatsBar.svelte"
+    "web/src/lib/components/ThresholdSlider.svelte"
+    "web/src/lib/routes/+layout.svelte"
+    "web/src/lib/routes/+page.svelte"
+    "web/src/lib/stores/converter.ts"
+    "web/src/lib/stores/wasm.ts"
+    "web/static/_routes.json"
+    "web/svelte.config.js"
+    "web/tsconfig.json"
+    "web/vite.config.ts"
+    "web/wrangler.toml"
+)

@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "crates/converter-core",
+    "crates/converter-wasm",
+]
+resolver = "2"
+
+[profile.release]
+opt-level     = "s"
+lto           = true
+codegen-units = 1
+strip         = true
+debug         = false
+
+[profile.dev]
+opt-level = 0
+debug     = true
+
+[profile.release.package.converter-wasm]
+opt-level = "s"

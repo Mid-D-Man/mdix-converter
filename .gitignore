@@ -1,0 +1,10 @@
+target/
+dist/
+.env
+*.log
+.DS_Store
+**/.DS_Store
+node_modules/
+.svelte-kit/
+pkg/
+web/src/lib/wasm/

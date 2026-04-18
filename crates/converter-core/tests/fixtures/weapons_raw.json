@@ -1,0 +1,9 @@
+[
+  {"id": "IRON_SWORD",  "name": "Iron Sword",  "type": "SWORD", "rarity": "COMMON",    "damage": 25, "sell": 50,  "buy": 200},
+  {"id": "STEEL_SWORD", "name": "Steel Sword", "type": "SWORD", "rarity": "UNCOMMON",  "damage": 45, "sell": 90,  "buy": 360},
+  {"id": "ELVEN_BLADE", "name": "Elven Blade", "type": "SWORD", "rarity": "RARE",      "damage": 80, "sell": 160, "buy": 640},
+  {"id": "HUNTING_BOW", "name": "Hunting Bow", "type": "BOW",   "rarity": "COMMON",    "damage": 20, "sell": 40,  "buy": 160},
+  {"id": "STORM_BOW",   "name": "Storm Bow",   "type": "BOW",   "rarity": "RARE",      "damage": 70, "sell": 140, "buy": 560},
+  {"id": "OAK_STAFF",   "name": "Oak Staff",   "type": "STAFF", "rarity": "COMMON",    "damage": 18, "sell": 36,  "buy": 144},
+  {"id": "CRYSTAL_STAFF","name":"Crystal Staff","type": "STAFF","rarity": "RARE",      "damage": 65, "sell": 130, "buy": 520}
+]
