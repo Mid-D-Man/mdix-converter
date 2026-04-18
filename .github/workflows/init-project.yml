@@ -1,0 +1,38 @@
+name: Initialize project
+
+# ── HOW TO BOOTSTRAP ──────────────────────────────────────────────────────────
+#
+# 1. Create a new GitHub repo (empty is fine)
+# 2. Via the GitHub web editor, add these TWO files:
+#      .mdix/project_structure/project_structure.mdix
+#      .github/workflows/init-project.yml   (this file)
+# 3. Actions → "Initialize project" → Run workflow
+# 4. All project files are generated and committed automatically
+# 5. This workflow is no longer needed after that — delete it or leave it
+#
+# After generation, the repo will contain:
+#   - generate-structure.yml  (re-run if you change the template)
+#   - build-wasm.yml          (triggers on crates/** changes)
+#   - deploy.yml              (triggers on --cloudflare in commit message)
+#   - Full Rust workspace     (converter-core + converter-wasm)
+#   - Full SvelteKit web app  (web/)
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Preview what will be created without writing anything (true/false)'
+        required: false
+        default: 'false'
+
+jobs:
+  generate:
+    uses: Mid-D-Man/mdix-scaffold/.github/workflows/generate-structure.yml@main
+    permissions:
+      contents: write
+    with:
+      template:       '.mdix/project_structure/project_structure.mdix'
+      dry_run:        ${{ inputs.dry_run || 'false' }}
+      file_strategy:  'skip'
